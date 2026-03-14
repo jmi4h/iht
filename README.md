@@ -8,7 +8,7 @@
 
 Official website and digital archive for IHT.
 
-[View the Site]((https://jmi4h.github.io/iht/))
+[View the Site](https://jmi4h.github.io/iht/)
 
 ---
 
