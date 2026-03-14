@@ -1,4 +1,3 @@
-/* Industrial Minimalist Style */
 body {
     background-color: #000000;
     color: #ffffff;
@@ -9,62 +8,73 @@ body {
 }
 
 header {
-    padding: 40px;
+    /* Shrunk from 40px to 20px to make the top bar smaller */
+    padding: 20px;
     text-align: center;
 }
 
 .logo {
-    width: 150px;
+    /* Slightly smaller logo for a cleaner top bar */
+    width: 100px;
+    height: auto;
 }
 
 /* Featured Video Section */
 .featured {
     width: 100%;
-    background: #0a0a0a;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #222;
+    background: #000000; /* Matched to body for seamless look */
+    padding-bottom: 60px;
 }
 
 .video-container {
-    width: 80%;
-    max-width: 900px;
-    margin: 0 auto;
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto; /* Added 40px margin to top/bottom to center it */
     aspect-ratio: 16 / 9;
 }
 
 iframe {
     width: 100%;
     height: 100%;
-    border: 1px solid #333;
+    border: 1px solid #222; /* Subtle border for the industrial look */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.05); /* Very faint glow */
 }
 
 .featured-info {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .featured-info h1 {
-    font-size: 1.2rem;
-    color: #888;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.featured-info p {
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 0;
 }
 
 /* Movie Grid */
 main {
     padding: 50px 10%;
+    border-top: 1px solid #111; /* Subtle divider */
 }
 
 h2 {
-    font-size: 0.9rem;
-    border-left: 3px solid #fff;
+    font-size: 0.8rem;
+    border-left: 2px solid #fff;
     padding-left: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #aaa;
 }
 
 .movie-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
 }
 
 .movie-card {
@@ -73,35 +83,38 @@ h2 {
 }
 
 .movie-card:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px); /* Gentle lift instead of scale */
 }
 
 .poster-placeholder {
     width: 100%;
-    aspect-ratio: 2 / 3;
-    background-color: #111;
-    border: 1px solid #222;
+    aspect-ratio: 16 / 9; /* Matched to video format */
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 0.7rem;
     font-weight: bold;
-    color: #444;
+    color: #333;
+    text-align: center;
 }
 
 .movie-card h3 {
     margin: 15px 0 5px 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
 }
 
 .movie-card p {
-    color: #666;
-    font-size: 0.8rem;
+    color: #555;
+    font-size: 0.75rem;
     margin: 0;
 }
 
 footer {
     text-align: center;
-    padding: 100px 0 50px 0;
-    font-size: 0.7rem;
-    color: #333;
+    padding: 80px 0 40px 0;
+    font-size: 0.6rem;
+    color: #222;
 }
